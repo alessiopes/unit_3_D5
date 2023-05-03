@@ -1,0 +1,91 @@
+.bg-image {
+  background-image: url("assets/hero-img.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.bg-purple {
+  background-color: #7550fe;
+}
+
+#three-section .icon {
+  width: 50px;
+  height: 50px;
+  background-color: #ffeeda;
+  border-radius: 50%;
+  color: #c99254;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Nascondi le frecce di navigazione per mobile */
+@media (max-width: 767px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+
+/* Posiziona le frecce di navigazione all'esterno del carosello per desktop */
+@media (min-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .carousel-control-prev {
+    left: -50px;
+  }
+
+  .carousel-control-next {
+    right: -50px;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #c5c5c5 !important; /* Imposta il colore delle frecce di navigazione su nero */
+  border-radius: 50%;
+  width: 30px !important;
+  height: 30px !important;
+  padding: 0.4rem !important;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: #999 !important; /* Imposta il colore delle frecce di navigazione su un tono più scuro al passaggio del mouse */
+}
+
+/* Decrease the font size on small screens */
+@media (max-width: 992px) {
+  #myCarousel h5 {
+    font-size: 16px;
+  }
+
+  #myCarousel span {
+    font-size: 14px;
+  }
+
+  #myCarousel #real-price {
+    font-size: 20px !important;
+  }
+}
+
+#myCarousel .rating {
+  color: rgb(224, 191, 0);
+}
+
+li a {
+  text-decoration: none;
+  color: gray;
+}
